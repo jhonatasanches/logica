@@ -1,25 +1,37 @@
-var num1, num2, num3
+var num1, num2, num3, maior, menor, meio
 var rs = require('readline-sync')
 
-num1 = rs.question('Coloque o primeiro numero: ')
-num2 = rs.question('Coloque o segundo numero: ')
-num3 = rs.question('Coloque o terceiro numero: ')
+num1 = rs.questionInt('Coloque o primeiro numero: ')
+num2 = rs.questionInt('Coloque o segundo numero: ')
+num3 = rs.questionInt('Coloque o terceiro numero: ')
 
-if (num1 < num2){
-    console.log('Reescrevendo em ordem : ' +num1)
+if ((num1 > num2) && (num1 > num3)) {
+    maior = num1
+
+    if (num2 > num3) {
+        meio = num2
+        menor = num3
+        console.log(menor, meio, maior)
+    }
+    console.log(menor, meio, maior)
 }
-else if (num1<num3){
-    console.log('Reescrevendo em ordem : '+num1)
+else if ((num2 > num3) && (num2 > num1)) {
+    maior = num2
+
+    if (num1 > num3) {
+        meio = num1
+        menor = num3
+        console.log(menor, meio, maior)
+    }
+    console.log (menor, meio, maior)
 }
-else if (num2<num1){
-    console.log('Reescrevendo em ordem : '+num2)
-}
-else if (num2<num3){
-    console.log('Reescrevendo em ordem : '+num2)
-}
-else if (num3<num1){
-    console.log('Reescrevendo em ordem : '+num3)
-}
-else{
-    console.log('Reescrevendo em ordem : '+num3)
+else if ((num3 > num2) && (num3 > num1)) {
+    maior = num3
+
+    if (num1 > num2) {
+        meio = num1
+        menor = num2
+        console.log(menor, meio, maior)
+    }
+    console.log(menor, meio, maior)
 }
