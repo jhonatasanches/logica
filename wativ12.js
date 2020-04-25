@@ -8,4 +8,4 @@ while (i < 15) {
     i++
 }   
 
-console.log('O resultado e: ' +n1/15)
+console.log('O resultado e: ' +n1/i)
