@@ -11,6 +11,7 @@ while (n1 > 0){
     
     console.log(result)
     result = n2 + result
+    
     if (result > n1){
         break
     }
