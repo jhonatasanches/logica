@@ -1,13 +1,30 @@
-var num1 = 50
-var i = 1
+var num = 1
+var i = 50
 
-while (i <= num1) {
-    if (i % 2 != 0 && i % i == 0) {
-        console.log(i + ' IMPAR PRIMO')
-    } else if (i % 2 == 0) {
-        console.log(i + ' PAR')
-    } else{
-        console.log(i + ' IMPAR')
+while (num <= i) {
+    var ehprimo = true //TODOS NUMEROS PRIMOS ATÉ ENTÃO
+    var contador = 2
+
+    while (contador < num) {
+        if (num % contador == 0) { //SEPARANDO NUMEROS QUE ERAM PRIMOS
+            ehprimo = false
+        }
+        contador++
     }
-    i++
+
+    if (num%2==0) {
+        if (ehprimo == true){
+            console.log(num, 'O numero e par e primo')
+        } else {
+            console.log(num, 'O numero e par')
+        }
+    }else {
+        if (ehprimo == true){
+            console.log (num, 'O numero e impar e primo')
+        } else {
+            console.log(num, 'O numero e impar')
+    }
+    }
+    num++
 }
+
