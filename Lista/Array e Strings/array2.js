@@ -18,7 +18,7 @@ for (var contador = 0; contador < 5; contador++) {
 console.log(jogador2+ ' você escolheu os numeros: ' +numeros2)
 
 for(var contador = 5; contador >=0; contador--){
-    var diferenteDeJogador2 = numerodojogador1[i]
+    var diferenteDeJogador2 = numerodojogador1[contador]
     if (!numerodojogador2.includes(diferenteDeJogador2)){
         diferenteDeJogador2.push(numerodojogador1)
     }
