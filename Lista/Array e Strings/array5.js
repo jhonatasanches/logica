@@ -18,9 +18,11 @@ for (var contador = 0; contador < 5; contador++) {
 
 console.log(jogador2+ ' você escolheu os numeros: ' +numeros2)
 
+var juntandoArrays = numeros1.concat(numeros2)
+console.log(juntandoArrays)
 
-for(var contador = 0; contador < numeros1.length; contador++){
-    if (!numeros2.includes(numeros1[contador])){
-        console.log(numeros1[contador])
-    }
-}
+// for(var contador = 0; contador < numeros1.length; contador++){
+//     if (!numeros2.includes(numeros1[contador])){
+//         console.log(numeros2[contador])
+//     }
+// }
